@@ -15,6 +15,8 @@ public class IpController {
             ip = request.getRemoteAddr();
         }
         System.out.println(ip);
+        System.out.println();
+        System.out.println("test");
         return ip;
     }
 }
