@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -47,12 +46,10 @@ public class Test1 {
     }
 
     @Test
-    void test2(){
-        ArrayList<String> list = new ArrayList<>();
-        list.add("POST");
-        list.add("GET");
-        list.remove("GET");
-        System.out.println(list);
+    public void test2(){
+        Long l = 1L;
+        Integer i = 1;
+        System.out.println(l.equals(i.longValue()));
     }
 
 //    "rules": [
